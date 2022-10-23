@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+/** typography **/
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.plan-text {
+  color: var(--Darkblue);
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-top: 1em;
+  margin-left: 0.6em;
+  font-weight: 900;
+}
+
+.price {
+  color: var(--Desaturatedblue);
+  font-weight: normal;
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--Desaturatedblue);
+}
+
+main .plan-container a {
+  color: var(--Brightblue);
+  font-weight: bold;
+  text-align: right;
+  margin-left: auto;
+}
+
+main .plan-container a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+main .card-footer a {
+  color: var(--Desaturatedblue);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+main .card-footer a:hover {
+  color: var(--Darkblue);
+}
+
+/** layout **/
+
+html {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .card-body {
+  text-align: center;
+  padding: 1em 2em;
+  margin: 0;
+}
+
+main .plan-container {
+  background-color: rgba(128, 128, 128, 0.096);
+  padding: 0.4em 1.2em;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+main .plan-container svg {
+  margin-right: 0.5em;
+}
+
+img {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+main .card-footer {
+  padding: 2em 0;
+}
+
+main .card-footer button {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--Brightblue);
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 1em;
+  transition: 0.3s;
+}
+
+main .card-footer button:hover {
+  background-color: #766cf1;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0.5em;
+  }
+
+  main {
+    width: 95%;
+    max-width: 95%;
+    border-radius: 20px;
+  }
+
+  main .card-body {
+    text-align: center;
+    padding: 1.5em;
+    margin: 0;
+  }
+
+  main .plan-container {
+    background-color: rgba(128, 128, 128, 0.096);
+    padding: 0.4em 1em;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 1.4em;
+  }
+
+  main .card-footer {
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main .plan-container {
+    background-color: rgba(128, 128, 128, 0.096);
+    padding: 0.4em 1em;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 1.4em;
+  }
+
+  main .plan-container a {
+    color: var(--Brightblue);
+    font-weight: bold;
+    margin-left: 0;
+  }
+}
