@@ -50,25 +50,25 @@ p {
   color: var(--Desaturatedblue);
 }
 
-main .plan-container a {
+.card .plan-container a {
   color: var(--Brightblue);
   font-weight: bold;
   text-align: right;
   margin-left: auto;
 }
 
-main .plan-container a:hover {
+.card .plan-container a:hover {
   color: #766cf1;
   text-decoration: none;
 }
 
-main .card-footer a {
+.card .card-footer a {
   color: var(--Desaturatedblue);
   text-decoration: none;
   font-weight: 900;
 }
 
-main .card-footer a:hover {
+.card .card-footer a:hover {
   color: var(--Darkblue);
 }
 
@@ -83,27 +83,28 @@ html {
 
 body {
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-main {
-  width: 30%;
+.card {
+  width: 50%;
   height: auto;
   background-color: white;
   border-radius: 15px;
+  margin: auto;
   padding: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-main .card-body {
+.card .card-body {
   text-align: center;
   padding: 1em 2em;
   margin: 0;
 }
 
-main .plan-container {
+.card .plan-container {
   background-color: rgba(128, 128, 128, 0.096);
   padding: 0.4em 1.2em;
   max-width: 100%;
@@ -113,7 +114,7 @@ main .plan-container {
   flex-wrap: wrap;
 }
 
-main .plan-container svg {
+.card .plan-container svg {
   margin-right: 0.5em;
 }
 
@@ -123,11 +124,11 @@ img {
   max-width: 100%;
 }
 
-main .card-footer {
+.card .card-footer {
   padding: 2em 0;
 }
 
-main .card-footer button {
+.card .card-footer button {
   width: 100%;
   max-width: 100%;
   border-radius: 10px;
@@ -144,7 +145,7 @@ main .card-footer button {
   box-shadow: rgba(88, 88, 88, 0.2) 0px 17px 10px 0px;
 }
 
-main .card-footer button:hover {
+.card .card-footer button:hover {
   background-color: #766cf1;
 }
 
@@ -163,19 +164,19 @@ main .card-footer button:hover {
     padding: 0.5em;
   }
 
-  main {
+  .card {
     width: 95%;
     max-width: 95%;
     border-radius: 20px;
   }
 
-  main .card-body {
+  .card .card-body {
     text-align: center;
     padding: 1.5em;
     margin: 0;
   }
 
-  main .plan-container {
+  .card .plan-container {
     background-color: rgba(128, 128, 128, 0.096);
     padding: 0.4em 1em;
     max-width: 100%;
@@ -186,13 +187,13 @@ main .card-footer button:hover {
     margin-top: 1.4em;
   }
 
-  main .card-footer {
+  .card .card-footer {
     padding: 1em 0;
   }
 }
 
 @media screen and (max-width: 300px) {
-  main .plan-container {
+  .card .plan-container {
     background-color: rgba(128, 128, 128, 0.096);
     padding: 0.4em 1em;
     max-width: 100%;
@@ -204,7 +205,7 @@ main .card-footer button:hover {
     margin-top: 1.4em;
   }
 
-  main .plan-container a {
+  .card .plan-container a {
     color: var(--Brightblue);
     font-weight: bold;
     margin-left: 0;
